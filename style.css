@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+.container {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* NAV DESIGN */
+nav {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo > img {
+  height: 3rem;
+}
+
+/* HERO Design */
+.hero {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textTop {
+  height: 50%;
+  width: 100%;
+
+  margin-top: 3rem;
+}
+
+.mini-title {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.lines {
+  font-size: 1.2rem;
+}
+
+.mini-text {
+  padding: 1rem 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.big-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.desc-text {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  height: 3rem;
+  width: 10rem;
+  background: #008379;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.illustration {
+  width: 60%;
+  align-self: flex-end;
+
+  margin-bottom: 20%;
+}
+
+.illustration > img {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+  width: 100%;
+}
+
+.stars-icon {
+  height: 1.5rem;
+  width: auto;
+  margin: 0.5rem 0;
+}
+
+.boldText {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.smallText {
+  font-size: 0.8rem;
+}
+
+/* HAMBURGER Design */
+.hamburger-icon {
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.toggle {
+  height: 2.4px;
+  width: 100%;
+  background: #000000;
+}
+
+.toggle::after,
+.toggle::before {
+  content: "";
+  background: inherit;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+.toggle::before {
+  top: 40px;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 0%;
+  width: 0%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 131, 121, 0.8);
+  border-radius: 10rem 0px 0px 10rem;
+  transition: all 0.4s ease;
+}
+
+.menu > * {
+  margin: 1.5rem 0;
+}
+
+.menu > a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.apple-download {
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+  width: 100%;
+  left: 50%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 360px) {
+  .big-title {
+    font-size: 2rem;
+  }
+  .desc-text {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
