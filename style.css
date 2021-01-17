@@ -14,7 +14,7 @@
 
 /* NAV DESIGN */
 nav {
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ nav {
 }
 
 .logo > img {
-  height: 3rem;
+  height: 2.8rem;
 }
 
 /* HERO Design */
@@ -75,6 +75,7 @@ nav {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .illustration {
@@ -183,6 +184,14 @@ footer {
   transition: all 0.4s ease;
 }
 
+.links {
+  display: none;
+}
+
+nav > .apple-download {
+  display: none;
+}
+
 @media (max-width: 360px) {
   .big-title {
     font-size: 2rem;
@@ -190,5 +199,116 @@ footer {
   .desc-text {
     width: 100%;
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 55%;
+  }
+  .links > a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  nav > .apple-download {
+    display: flex;
+  }
+
+  .big-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  .desc-text {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.1rem;
+  }
+
+  .illustration {
+    width: 70%;
+    margin-bottom: 10%;
+  }
+
+  .illustration > img {
+    width: 100%;
+  }
+
+  .stars-icon {
+    height: 1.8rem;
+  }
+
+  .boldText {
+    font-size: 1.2rem;
+  }
+
+  .smallText {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .illustration {
+    width: 60%;
+    margin-bottom: 10%;
+  }
+
+  footer {
+    height: 6rem;
+    padding-bottom: 7rem;
+  }
+
+  .links {
+    width: 50%;
+  }
+  .links > a {
+    font-size: 1.2rem;
+  }
+
+  .logo > img {
+    width: 50%;
+    height: auto;
+  }
+
+  .big-title {
+    font-size: 4rem;
+  }
+
+  .desc-text {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .illustration {
+    width: 38rem;
+  }
+
+  .big-title {
+    font-size: 5rem;
+  }
+
+  .desc-text {
+    width: 25rem;
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    height: 4rem;
+    width: 20rem;
+    font-size: 1.3rem;
   }
 }
